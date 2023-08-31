@@ -1,3 +1,14 @@
-# Joe's Pizza
+# E23-y-programming
 
-Code from the classroom aug. 31st. The pizzeria markup (aka HTML).
+In this repo you'll find boilerplates and sample code for the programming class. 
+
+* Class: E23-y
+* Education: Multimedia Design
+* Semester: First
+
+## Boilerplate
+
+* Directory: ./boilerplate
+* Boilerplate: a standard boilerplate for HTML, CSS and JavaScript
+
+Use this as a starting point when you want to code a web page.
