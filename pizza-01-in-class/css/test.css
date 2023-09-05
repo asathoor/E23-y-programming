@@ -1,13 +1,60 @@
-    :root {
+   /* variables */
+   :root {
         --contrast: lime;
         --backgr: #34753e;
         --pink: #ffb2d7;
         --darth: rgb(103, 29, 29);
     }
 
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lilita+One&family=Pacifico&display=swap');
+
+/* about my fonts 
+font-family: 'Black Ops One', cursive;
+font-family: 'Lilita One', cursive;
+font-family: 'Pacifico', cursive;
+*/
+
+h1 {
+    font-family: 'Black Ops One', cursive;
+}
+h2, p {
+    font-family: 'Pacifico', cursive;
+}
+
     body {
         background-color: var(--contrast);
+        font-family: Arial, Helvetica, sans-serif;
     }
+
+/* navigation */
+nav {
+    background-color: var(--darth);
+    color: var(--pink);
+    height: 20vh;
+    position: top;
+    /*top: 0;*/
+    width: 100%;
+      
+}
+
+/* how to style links */
+
+    a {
+        background-color: var(--pink);
+    }
+
+    a:hover {
+        background-color: var(--contrast);
+        font-size: xx-large;
+    }
+
+    a:visited {
+        background-color: var(--darth);
+        color: var(--contrast);
+    }
+
+
 
     #logoImg {
         width: 123px;
@@ -24,6 +71,7 @@
     #pizzas {
         display: flex;
         flex-wrap: wrap;
+        min-height: 100vh;
     }
 
     article {
@@ -57,3 +105,35 @@
     display: inline-block;
     font-size: 1.5rem;
   }  
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #ef77f9;
+    }
+
+    article {
+        width: 100%;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #61e098;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: #c23c0b;
+    }
+}    
+
+   
