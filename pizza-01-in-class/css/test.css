@@ -1,0 +1,59 @@
+    :root {
+        --contrast: lime;
+        --backgr: #34753e;
+        --pink: #ffb2d7;
+        --darth: rgb(103, 29, 29);
+    }
+
+    body {
+        background-color: var(--contrast);
+    }
+
+    #logoImg {
+        width: 123px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header div {
+        padding-left: 11%;
+    }
+
+    #pizzas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 33%;
+        padding: 4ch;
+        padding-top: 2ch;
+        /* this is how to center things ...
+
+        margin-left: auto;
+        margin-right: auto;
+        */
+
+        margin-bottom: 12px;
+        border: 5px solid var(--darth);
+        border-radius: 46px;
+        background-color: var(--pink);
+        background: url('../images/background.jpg');
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+  button {
+    background-color: var(--contrast); /* Green */
+    border: none;
+    color: var(--darth);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+  }  
