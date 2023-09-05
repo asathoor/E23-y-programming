@@ -1,0 +1,39 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+ :root {
+   --contrast: lime;
+   --backgr: #34753e;
+   --pink: #ffb2d7;
+ }
+
+/* Use your variables on elements */
+body {
+  background-color: var(--pink); /* background */
+  color: var(--backgr);
+}
+
+/* all article elements */
+article {
+  background-color: green;
+  color: var(--backgr);
+}
+
+/* address an id */
+#slogan {
+  color: violet;
+}
+
+/* address a class */
+.headFoot {
+  background-color: black; /* background */
+  color: white;
+}
+
+/* headings */
+h2 {
+  color: yellow;
+}
