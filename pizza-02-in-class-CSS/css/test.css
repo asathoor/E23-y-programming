@@ -13,6 +13,11 @@
         --breadText: Arial, Helvetica, sans-serif;
     }
 
+/* remove white on top */
+* {
+    margin: 0 auto;
+}
+
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lilita+One&family=Pacifico&display=swap');
 
@@ -28,13 +33,14 @@ body {
     font-family: var(--breadText);
 }
 
-
 /* headings */
 h1 {
     font-family: var(--opsOne);
+    color: var(--pink);
 }
 h2 {
     font-family: var(--pacifico);
+    color: var(--contrast);
 }
 
 /* navigation */
@@ -69,9 +75,8 @@ nav a {
     }
 
 /* Logo Image */
-
-    #logoImg {
-        width: 123px;
+    #logo {
+        width: 200px;
         height: auto;
     }
 
@@ -114,16 +119,7 @@ nav a {
         width: auto;
     }
 
-  button {
-    background-color: var(--contrast); /* Green */
-    border: none;
-    color: var(--darth);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-  }  
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) {
