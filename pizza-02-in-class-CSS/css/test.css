@@ -1,9 +1,16 @@
    /* variables */
    :root {
+        /* colors */
         --contrast: lime;
         --backgr: #34753e;
         --pink: #ffb2d7;
-        --darth: rgb(103, 29, 29);
+        --darth: rgb(93, 62, 16);
+
+        /* fonts */
+        --opsOne: 'Black Ops One', cursive;
+        --lilitha: 'Lilita One', cursive;
+        --pacifico: 'Pacifico', cursive;
+        --breadText: Arial, Helvetica, sans-serif;
     }
 
 /* Google fonts */
@@ -15,27 +22,34 @@ font-family: 'Lilita One', cursive;
 font-family: 'Pacifico', cursive;
 */
 
-h1 {
-    font-family: 'Black Ops One', cursive;
-}
-h2, p {
-    font-family: 'Pacifico', cursive;
+/* all over design */
+body {
+    background-color: var(--contrast);
+    font-family: var(--breadText);
 }
 
-    body {
-        background-color: var(--contrast);
-        font-family: Arial, Helvetica, sans-serif;
-    }
+
+/* headings */
+h1 {
+    font-family: var(--opsOne);
+}
+h2 {
+    font-family: var(--pacifico);
+}
 
 /* navigation */
 nav {
     background-color: var(--darth);
     color: var(--pink);
-    height: 20vh;
-    position: top;
+    height: 145px;
     /*top: 0;*/
-    width: 100%;
-      
+    width: 100%;    
+    text-align: center;
+}
+
+nav a {
+    position:relative;
+    top: 50%;
 }
 
 /* how to style links */
@@ -54,12 +68,14 @@ nav {
         color: var(--contrast);
     }
 
-
+/* Logo Image */
 
     #logoImg {
         width: 123px;
+        height: auto;
     }
 
+/* header section */
     header {
         display: flex;
     }
@@ -68,6 +84,7 @@ nav {
         padding-left: 11%;
     }
 
+/* Area with pizzas */
     #pizzas {
         display: flex;
         flex-wrap: wrap;
@@ -88,11 +105,13 @@ nav {
         border: 5px solid var(--darth);
         border-radius: 46px;
         background-color: var(--pink);
-        background: url('../images/background.jpg');
+        /*background: url('../images/background.jpg');*/
     }
 
+/* responsive image trick */    
     img {
-        max-width: 100%;
+        width: 100%;
+        width: auto;
     }
 
   button {
@@ -107,25 +126,50 @@ nav {
   }  
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
     body {
         background-color: #ef77f9;
+        font-size: larger;
     }
 
+    main, 
     article {
         width: 100%;
     }
     
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--darth);
+    color: var(--pink);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* images */
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
         background-color: #61e098;
+        font-size: large;
     }
-
-    article {
+    main {
         width: 100%;
+    }
+    #pizzas {
+        justify-content: space-evenly;
+    }
+    article {
+        width: 23%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 }
 
@@ -133,6 +177,13 @@ nav {
 @media only screen and (min-width: 992px) {
     body {
         background-color: #c23c0b;
+        font-size: normal;
+    }
+    main  {
+        display: flex;
+    }
+    article {
+        width: 23%;
     }
 }    
 

@@ -5,8 +5,8 @@
 
 /* Define variables in the :root */
  :root {
-   --contrast: lime;
-   --backgr: #34753e;
+   --contrast: rgb(29, 175, 29);
+   --backgr: #fcfffd;
    --pink: #ffb2d7;
  }
 
