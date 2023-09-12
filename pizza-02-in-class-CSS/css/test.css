@@ -61,16 +61,14 @@ nav a {
 /* how to style links */
 
     a {
-        background-color: var(--pink);
+        color: var(--contrast);
     }
 
     a:hover {
-        background-color: var(--contrast);
         font-size: xx-large;
     }
 
     a:visited {
-        background-color: var(--darth);
         color: var(--contrast);
     }
 
@@ -78,6 +76,7 @@ nav a {
     #logo {
         width: 200px;
         height: auto;
+        border-radius: 50%;
     }
 
 /* header section */
@@ -117,6 +116,7 @@ nav a {
     img {
         width: 100%;
         width: auto;
+        border-radius: 50%;
     }
 
 
