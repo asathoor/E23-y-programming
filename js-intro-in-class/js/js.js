@@ -57,4 +57,6 @@ hi.innerHTML += pizza;
 /** Function: a series of instructions */
 let boom = function(){
     alert("We use cookies, and we track all you do! Consent?");
+    console.log("Cokie info fired of!");
+    return true;
 }
