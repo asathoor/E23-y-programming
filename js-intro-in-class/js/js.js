@@ -53,3 +53,8 @@ let pizza = `
 
 // inject this into #hi
 hi.innerHTML += pizza;
+
+/** Function: a series of instructions */
+let boom = function(){
+    alert("We use cookies, and we track all you do! Consent?");
+}
