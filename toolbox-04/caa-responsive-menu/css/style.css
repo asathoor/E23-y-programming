@@ -1,0 +1,29 @@
+:root {
+  --backgroundBigger: orange;
+  --backgroundMobile: black;
+  --textDark: black;
+  --textContrast: white;
+}
+
+
+body {
+  background-color: var(--backgroundBigger);
+  color: var(--textDark);
+}
+
+/* initial settings: hide the mobile menu */
+#mobNav {
+  display: none;
+}
+
+/* mobile devices @media */
+@media only screen and (max-width: 600px) {
+
+  #mobNav {
+    display:block;
+  }
+  #bigNav {
+    display: none;
+  }
+  
+}
