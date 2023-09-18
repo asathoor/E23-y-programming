@@ -1,0 +1,27 @@
+/* Styles for any screen */
+#mobileDev {
+    display:none;
+}
+
+/* Mobile styles below */
+.backgroundMob {
+    background-color: black;
+}
+
+#mobileDev a {
+    font-size: xx-large;
+    color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Show burger on mobiles */
+    #mobileDev {
+        display:block;
+    }
+
+    /* Hide the large screen menu */
+    #largeDev {
+        display:none;
+    }
+}

@@ -19,7 +19,6 @@ body {
     /* animation */
     animation-name: perAnimate;
     animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 
 /** give your animation a name, here it's perAnimate */
