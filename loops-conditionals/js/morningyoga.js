@@ -67,26 +67,7 @@ result.innerHTML += " Month: " + uge[ myDate.getDay() ] // week
 
 // What to celebrate if it's tuesday
 if (myDate.getDay() == 2) {
-    msg.innerHTML = "Tuesday is grey"
+    msg.innerHTML = "Tuesday's grey"
   } else {
     msg.innerHTML = "It's friday I'm in love"
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
