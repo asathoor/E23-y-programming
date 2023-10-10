@@ -17,3 +17,13 @@ localStorage.setItem("myName", "Per")
 console.log( "From browser storage: " + localStorage.getItem("myName") )
 
 welcome.innerHTML += localStorage.getItem("myName")
+
+/** Function that will save to local storage */
+function storeMe( dragonName ){
+    localStorage.setItem("monster", dragonName )
+    updateBasket()
+}
+/** Basket updated */
+function updateBasket(){
+    basket.innerHTML += localStorage.getItem("monster") + "<br>"
+}
