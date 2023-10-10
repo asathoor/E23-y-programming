@@ -9,16 +9,56 @@ body {
     background-size: cover;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* posiiton transparant animated images */ 
  #red {
+
     /* remember to position your element */
     position: relative;
+    bottom: 0px;
     width: 111px;
-    height: 111px;
     
     /* animation */
     animation-name: perAnimate;
-    animation-duration: 2s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+#blue {
+    /* remember to position your element */
+    position: absolute
+    ;
+    width: 222px;
+    left: 222px;
+    right: 111px;
+    
+    /* animation */
+    animation-name: perAnimate;
+    animation-duration: 8s;
+}
+
+#green {
+    /* remember to position your element */
+    position: relative;
+    width: 78px;
+    left: 333px;
+    right: 444px;
+    
+    /* animation */
+    animation-name: xxMagick;
+    animation-fill-mode: forwards;
+    animation-duration: 17s;
+    
+}
+
+#myButton {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(230, 112, 195);
 }
 
 /** give your animation a name, here it's perAnimate */
@@ -38,4 +78,28 @@ body {
     }
   }
 
+
+  /** give your animation a name, here it's perAnimate */
+@keyframes xxMagick {
+    0% {
+        top: 111px;
+        left: 111px;
+    }
+    50% {
+        top: 300px;
+        left: 567px;
+        transform: rotate(360deg);
+    }
+    100% {
+        top: 55px;
+        left: 200px;
+    }
+  }
   /* now you know the drill */
+
+  .anmimationHere {
+    /* animation */
+    animation-name: xxMagick;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+  }
