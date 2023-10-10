@@ -29,6 +29,48 @@ for (let i=0; i < remember.length; i++){
 
 /** CONDITIONALS */
 
+/** DATES AND JAVASCRIPT */
+
+// the months in my language
+let months = [
+    "Januar",
+    "Februar",
+    "Marts",
+    "April",
+    "Maj",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+]
+
+// days of the week in your own language
+let uge = [
+    "Søndag",
+    "Mandag",
+    "Tirsdag",
+    "Onsday",
+    "Torsdag",
+    "Fredag",
+    "Lørdag"
+]
+
+const myDate = new Date()
+console.log(myDate)
+result.innerHTML = "Year: "  + myDate.getFullYear() // year
+result.innerHTML += " Month: " + months[ myDate.getMonth() ] // month
+result.innerHTML += " Month: " + uge[ myDate.getDay() ] // week
+// get the year
+
+// What to celebrate if it's tuesday
+if (myDate.getDay() == 2) {
+    msg.innerHTML = "Tuesday is grey"
+  } else {
+    msg.innerHTML = "It's friday I'm in love"
+  }
 
 
 
