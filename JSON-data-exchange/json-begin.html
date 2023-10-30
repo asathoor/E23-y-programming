@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON Introduction</h1>
+    
+    <!-- below the JSON data will appear -->
+    <div id="about"></div>
+    <div id="works"></div>
+
+    <script>
+        const composer = {
+            firstName: "Johann Sebastian",
+            lastName: "Bach",
+            born: 1685,
+            dies: 1750,
+            image: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Johann_Sebastian_Bach.jpg',
+            works: [
+                "Chello Conserto in D Major",
+                "Fuga in A Minor",
+                "Third Lute Concerto in E"
+            ]
+        }
+
+        console.log(composer) // ye Object
+        console.log(composer.firstName) // first name
+        console.log(composer.works[0])
+
+        // if you want to see all in a list
+        // use a loop
+        for (i=0; i<composer.works.length;i++){
+            console.log( composer.works[i] )
+            works.innerHTML += `
+               <aside> Work: ${composer.works[i]} </aside>
+            `
+        }
+
+        about.innerHTML += `
+            <h1> ${composer.firstName} ${composer.lastName} </h1>
+            <h2> ( ${composer.born} -  ) </h2>
+            <figure>
+               <img src="${composer.image}" alt="${composer.firstName} ${composer.lastName}">
+            </figure>
+        `
+
+
+
+    </script>
+
+</body>
+</html>
