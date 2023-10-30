@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Washing Machines</h1>
+    <div id="machines"></div>
+
+    <script>
+        const list = {
+    "Ark1": [
+        {
+        "id": 1,
+        "machine": "SuperClean",
+        "booked": "false"
+        },
+        {
+        "id": 2,
+        "machine": "SnowWhite",
+        "booked": "true"
+        },
+        {
+        "id": 3,
+        "machine": "SuperClean",
+        "booked": "false"
+        },
+        {
+        "id": 4,
+        "machine": "SuperClean",
+        "booked": "true"
+        },
+        {
+        "id": 5,
+        "machine": "SnowWhite",
+        "booked": "false"
+        }
+    ]
+}
+
+console.log(list.Ark1[0])
+
+for (n=0;n < list.Ark1.length;n++){
+
+    let freedom = "";
+
+    if (list.Ark1[n].booked){
+        console.log("This machine is not available.")
+        freedom = "This machine is available."
+    }
+    else {
+        console.log("This machine is free for you.")
+        freedom = "This machine is not free."
+    }
+
+    document.getElementById("machines").innerHTML += `
+        <article class="machines">
+            <h4> ${list.Ark1[n].machine} </h4>
+            <ul>
+                <li>Available: ${freedom} </li>
+            </ul>
+        </article>
+    `
+}
+
+    </script>
+</body>
+</html>
