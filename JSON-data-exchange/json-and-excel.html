@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Let JSON do the hard work</h2>
+    <div id="washingRoom"></div>
+    <script>
+        let machines =
+        {"Ark1": [
+            {
+            "id": 1,
+            "machine": "miele",
+            "booked": "false"
+            },
+            {
+            "id": 2,
+            "machine": "miele",
+            "booked": "true"
+            },
+            {
+            "id": 3,
+            "machine": "swiel",
+            "booked": "false"
+            }
+        ]
+        }
+       
+        /* tests */
+        console.log(machines)
+        console.log(machines.Ark1[0].booked)
+
+        /* It's an array so loop it out */
+        /**
+        for (i=0; i < machines.Ark1.length; i++){
+            washingRoom.innerHTML += `
+                <article>
+                    <h4> Machine: ${machines.Ark1[i].machine} </h4>
+                    <ul>
+                       <li> Available: ${machines.Ark1[i].booked} </li>
+                    </ul>
+                </article>
+            `
+        }
+        */
+
+    </script>
+</body>
+</html>
