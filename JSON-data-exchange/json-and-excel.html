@@ -7,32 +7,35 @@
 </head>
 <body>
     <h2>Let JSON do the hard work</h2>
+    
+    <!-- Below you'll see the result -->
     <div id="washingRoom"></div>
+    
     <script>
         /** store your JSON in a variable */
         let machines = {
             "Ark1": [
             {
                 "id": 1,
-                "machine": "Smith",
+                "machine": "SuperClean",
                 "booked": "false"
             },
             {
                 "id": 2,
-                "machine": "Smith",
+                "machine": "SnowWhite",
                 "booked": "true"
             },
             {
                 "id": 3,
-                "machine": "Wesson",
+                "machine": "SuperClean",
                 "booked": "false"
             }
-            ] // end of the JSON array
-        } // end of JSON machines
+            ] // end of the Ark1 array
+        } // end of machines
        
         /* tests / demonstration */
-        console.log(machines)
-        console.log(machines.Ark1[0].booked)
+        console.log( machines )
+        console.log( machines.Ark1[0].booked )
 
         /* It's an array so loop and inject to the HTML */
         for (i=0; i < machines.Ark1.length; i++){
@@ -46,7 +49,7 @@
             `
         }
 
-        /** Question: How can we write "The machine is not available" if booked is false? */
+        /** Question: How can we write "The machine is not available" IF booked is false? */
         
 
     </script>
