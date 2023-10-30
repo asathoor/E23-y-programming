@@ -9,32 +9,32 @@
     <h2>Let JSON do the hard work</h2>
     <div id="washingRoom"></div>
     <script>
-        let machines =
-        {"Ark1": [
+        /** store your JSON in a variable */
+        let machines = {
+            "Ark1": [
             {
-            "id": 1,
-            "machine": "miele",
-            "booked": "false"
+                "id": 1,
+                "machine": "Smith",
+                "booked": "false"
             },
             {
-            "id": 2,
-            "machine": "miele",
-            "booked": "true"
+                "id": 2,
+                "machine": "Smith",
+                "booked": "true"
             },
             {
-            "id": 3,
-            "machine": "swiel",
-            "booked": "false"
+                "id": 3,
+                "machine": "Wesson",
+                "booked": "false"
             }
-        ]
-        }
+            ] // end of the JSON array
+        } // end of JSON machines
        
-        /* tests */
+        /* tests / demonstration */
         console.log(machines)
         console.log(machines.Ark1[0].booked)
 
-        /* It's an array so loop it out */
-        /**
+        /* It's an array so loop and inject to the HTML */
         for (i=0; i < machines.Ark1.length; i++){
             washingRoom.innerHTML += `
                 <article>
@@ -45,7 +45,9 @@
                 </article>
             `
         }
-        */
+
+        /** Question: How can we write "The machine is not available" if booked is false? */
+        
 
     </script>
 </body>
