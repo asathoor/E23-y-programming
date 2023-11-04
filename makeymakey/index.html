@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Video and audio control by MaKeyMaKey</h1>
+
+    <h2>Press SPACE will start or pause the video</h2>
+
+    <p>With inspiration from ChatGPT and video and audio from <a href="https://www.w3schools.com/html/html5_audio.asp">this tutorial on W3 Schools</a></p>
+    <p>The original ChatGPT-code was debugged by me, and now it works.</p>
+
+    <video id="myVideo" width="640" height="360" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Press w will start or pause the audio</h2>
+    <audio id="myAudio" controls>
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+   
+    <!-- add your script -->
+    <script src="js/makeymakey.js"></script>
+</body>
+</html>
