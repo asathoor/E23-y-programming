@@ -37,5 +37,12 @@ document.addEventListener('keydown', (event) => {
         }
         
     }
+
+    if (event.key === 'ArrowUp') {
+        
+        console.log("Yes this is ArrowUp")
+    
+        
+    }
     
 });
